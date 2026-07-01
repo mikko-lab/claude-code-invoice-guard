@@ -1,6 +1,6 @@
 {
   "name": "invoice-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Deterministic guardrail (refuse, don't guess) for an LLM agent on a VAT-critical invoice workflow: skill + subagent + MCP server + PreToolUse hook. Portfolio/demo plugin — illustrative rule, no real customer data.",
   "author": { "name": "Mikko Tarkiainen" },
   "homepage": "https://github.com/mikko-lab/claude-code-invoice-guard",
