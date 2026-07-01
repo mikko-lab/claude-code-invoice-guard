@@ -72,6 +72,13 @@ pip install "mcp>=1.27,<2"
 claude --plugin-dir .
 ```
 
+> **Huom `/mcp`-näkymästä:** kun ajat tätä repon juuresta, `/mcp` näyttää `invoice-erp`:n
+> kahteen kertaan — kerran **"Project MCPs"**-rivinä `✗ failed` (`Missing environment
+> variables: CLAUDE_PLUGIN_ROOT`), koska cwd:ssä oleva `.mcp.json` tulkitaan myös
+> erilliseksi projektikonfiguraatioksi, ja kerran **"Built-in MCPs"**-rivinä
+> `plugin:invoice-guard:invoice-erp ✔ connected · 3 tools`, joka on se oikeasti
+> käytetty palvelin. Epäonnistunut rivi on harmiton — jätä se huomiotta.
+
 **Asenna pluginina omasta marketplacesta:**
 ```bash
 /plugin marketplace add mikko-lab/claude-code-invoice-guard
