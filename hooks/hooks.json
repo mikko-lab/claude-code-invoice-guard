@@ -1,0 +1,17 @@
+{
+  "description": "Deterministinen gate write_vat_treatment-kutsun edessä (refuse, don't guess).",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__invoice-erp__write_vat_treatment",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/vat_gate.py"]
+          }
+        ]
+      }
+    ]
+  }
+}

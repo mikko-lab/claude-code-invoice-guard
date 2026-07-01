@@ -1,0 +1,13 @@
+{
+  "name": "mikko-lab-portfolio",
+  "owner": { "name": "Mikko Tarkiainen" },
+  "plugins": [
+    {
+      "name": "invoice-guard",
+      "source": "./",
+      "description": "Deterministic guardrail demo: skill + subagent + MCP server + PreToolUse hook on a VAT-critical invoice workflow.",
+      "category": "demo",
+      "keywords": ["guardrails", "llm-safety", "mcp", "hooks"]
+    }
+  ]
+}
