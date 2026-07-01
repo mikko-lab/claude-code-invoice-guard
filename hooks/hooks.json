@@ -3,7 +3,7 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "mcp__invoice-erp__write_vat_treatment",
+        "matcher": "mcp__.*write_vat_treatment",
         "hooks": [
           {
             "type": "command",
