@@ -13,4 +13,4 @@ Toistettava työnkulku yhden ostolaskun ALV-käsittelyyn.
 4. Kirjaa tulos: `write_vat_treatment(invoice_id, treatment)`.
 
 ## Ehdoton sääntö
-Älä arvaa. Jos faktat ovat monitulkintaiset, ÄLÄ kirjoita arvausta — ilmoita että lasku vaatii ihmisen tarkistuksen. Kriittinen kirjoitus on lisäksi gattitettu deterministisellä PreToolUse-hookilla, joka estää epävarman tai ristiriitaisen kirjoituksen.
+Älä arvaa. Jos faktat ovat monitulkintaiset, ÄLÄ kirjoita arvausta — ilmoita että lasku vaatii ihmisen tarkistuksen. Kriittinen kirjoitus on lisäksi gattitettu deterministisellä PreToolUse-hookilla, joka estää epävarman tai ristiriitaisen kirjoituksen. Hookin päätös on lopullinen; älä yritä kiertää sitä.
